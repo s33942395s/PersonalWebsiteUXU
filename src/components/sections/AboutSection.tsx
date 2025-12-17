@@ -25,7 +25,7 @@ export function AboutSection() {
                 </div>
                 {/* About illustration */}
                 <img
-                  src="/assets/about-illustration.PNG"
+                  src={`${import.meta.env.BASE_URL}assets/about-illustration.PNG`}
                   alt="About illustration"
                   className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300"
                   onLoad={(e) => {
