@@ -1,7 +1,5 @@
 import type { Work } from '../types';
-
-// Helper to get the correct asset path with base URL
-const getAssetPath = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+import { getAssetUrl } from '../utils/assets';
 
 export const works: Work[] = [
   // Graphic Design Works (6)
@@ -10,7 +8,7 @@ export const works: Work[] = [
     type: 'graphic',
     categories: ['平面設計'],
     year: 2024,
-    thumbnailSrc: getAssetPath('assets/works/graphic-1.jpg'),
+    thumbnailSrc: getAssetUrl('assets/works/graphic-1.jpg'),
     title: {
       zh: '茶包裝設計',
       en: 'Tea packaging design',
@@ -25,7 +23,7 @@ export const works: Work[] = [
     type: 'graphic',
     categories: ['平面設計'],
     year: 2024,
-    thumbnailSrc: getAssetPath('assets/works/graphic-2.png'),
+    thumbnailSrc: getAssetUrl('assets/works/graphic-2.png'),
     title: {
       zh: '雜誌設計',
       en: 'Magazine Design',
@@ -40,7 +38,7 @@ export const works: Work[] = [
     type: 'graphic',
     categories: ['平面設計'],
     year: 2023,
-    thumbnailSrc: getAssetPath('assets/works/graphic-3.png'),
+    thumbnailSrc: getAssetUrl('assets/works/graphic-3.png'),
     title: {
       zh: '書本封面設計',
       en: 'Book cover design',
@@ -55,7 +53,7 @@ export const works: Work[] = [
     type: 'graphic',
     categories: ['平面設計'],
     year: 2023,
-    thumbnailSrc: getAssetPath('assets/works/graphic-4.png'),
+    thumbnailSrc: getAssetUrl('assets/works/graphic-4.png'),
     title: {
       zh: '網站介面設計',
       en: 'Website Interface Design',
@@ -70,7 +68,7 @@ export const works: Work[] = [
     type: 'graphic',
     categories: ['平面設計'],
     year: 2024,
-    thumbnailSrc: getAssetPath('assets/works/graphic-5.jpg'),
+    thumbnailSrc: getAssetUrl('assets/works/graphic-5.jpg'),
     title: {
       zh: '大同電鍋',
       en: 'Tatung Electric Rice Cooker',
@@ -85,7 +83,7 @@ export const works: Work[] = [
     type: 'graphic',
     categories: ['平面設計'],
     year: 2023,
-    thumbnailSrc: getAssetPath('assets/works/graphic-6.png'),
+    thumbnailSrc: getAssetUrl('assets/works/graphic-6.png'),
     title: {
       zh: '毛線球圖示',
       en: 'Yarn ball illustration',
@@ -102,7 +100,7 @@ export const works: Work[] = [
     type: 'project',
     categories: ['專案'],
     year: 2023,
-    thumbnailSrc: getAssetPath('assets/works/project-1.jpg'),
+    thumbnailSrc: getAssetUrl('assets/works/project-1.jpg'),
     youtubeId: 'dQw4w9WgXcQ', // Placeholder - replace with actual video
     title: {
       zh: '祭祀傳承',
@@ -118,7 +116,7 @@ export const works: Work[] = [
     type: 'project',
     categories: ['專案'],
     year: 2024,
-    thumbnailSrc: getAssetPath('assets/works/project-2.jpg'),
+    thumbnailSrc: getAssetUrl('assets/works/project-2.jpg'),
     youtubeId: 'dx54uYqYakM', // Placeholder - replace with actual video
     title: {
       zh: 'Agevator',
@@ -134,7 +132,7 @@ export const works: Work[] = [
     type: 'project',
     categories: ['專案'],
     year: 2024,
-    thumbnailSrc: getAssetPath('assets/works/project-3.jpg'),
+    thumbnailSrc: getAssetUrl('assets/works/project-3.jpg'),
     youtubeId: '-aYi4uTXoyA', // Placeholder - replace with actual video
     title: {
       zh: '叫你主管出來',

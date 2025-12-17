@@ -12,5 +12,6 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
-  base: '/PersonalWebsite/', // For GitHub Pages compatibility
+  // Match the GitHub Pages repository name so assets resolve correctly
+  base: '/PersonalWebsiteUXU/',
 })
